@@ -1,0 +1,66 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Pomodoro Timer</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--smooth background-->
+<div id="background1" class="background-layer"></div>
+<div id="background2" class="background-layer"></div>
+
+
+<h1>Pomodoro Timer</h1>
+<div id="timer">25:00</div>
+<div id="breakIndicator" style="display: none;">You're on a break. Relax! 😌</div>
+
+<div class="controls">
+    <button class="start">Start</button>
+    <button class="pause">Stop</button>
+    <button class="reset">Reset</button>
+</div>
+
+<div class="rounds">
+    Completed Rounds: <span id="roundCount">0</span>
+</div>
+
+<!-- side panel -->
+<div id="sidePanel">
+    <div class="panelContent">
+    <h3>Backgrounds</h3>
+    <div class="background-options">
+        <button onclick="selectSound('standard')">Standard</button>
+        <button onclick="selectSound('calm')">Calm 🌅</button>
+        <button onclick="selectSound('thunder')">Thunder ⛈️</button>
+        <button onclick="selectSound('train')">Train 🚋</button>
+        <button onclick="selectSound('anime')">Anime 🌸</button>
+        <button onclick="selectSound('library')">Library 📚</button>
+        <button onclick="selectSound('forest')">Forest 🌲</button>
+        <button onclick="selectSound('ocean')">Ocean 🌊</button>
+        <button onclick="selectSound('mountain')">Mountains 🏔️</button>
+        <button onclick="selectSound('cute')">Cute 💖🧁</button>
+        <button onclick="selectSound('arty')">Arty 🌌</button>
+        <button onclick="selectSound('wind')">Wind 💨</button>
+    </div>
+
+    <h2 style="color:white; font-size: 20px;">Choose sounds:</h2>
+    <div id="panelSounds">
+        <button class="panel-button" onclick="selectSound('ocean')">Ocean 🌊</button>
+        <button class="panel-button" onclick="selectSound('forest')">Forest 🌲</button>
+        <button class="panel-button" onclick="selectSound('wind')">Wind 💨</button>
+        <button class="panel-button" onclick="selectSound('rain')">Rain 🌧️</button>
+        <button class="panel-button" onclick="selectSound('train')">Train 🚋</button>
+        <button class="panel-button" onclick="selectSound('thunder')">Thunder ⛈️</button>
+    </div>
+    </div>
+</div>
+
+<!-- toggle panel -->
+<button id="togglePanel">☰</button>
+
+<script src="main.js"></script>
+</body>
+</html>
